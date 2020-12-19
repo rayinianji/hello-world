@@ -23,7 +23,7 @@ pipeline {
         {
             steps
             {
-              sh 'docker build -t rayinianji/myweb:5.0.0 .   
+              sh 'docker build -t rayinianji/myweb:5.0.0 .' 
             }
         }
         }
