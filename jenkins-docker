@@ -31,7 +31,7 @@ pipeline {
         {
             steps
             {
-              sh "docker login -u anjidockerid -p dockerid_#$"
+              sh "docker login -u anjidockerid -p anjibabu2#"
               sh "docker push rayinianji/myweb:5.0.0" 
             }
         }
