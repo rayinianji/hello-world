@@ -26,6 +26,15 @@ pipeline {
               sh 'docker build -t rayinianji/myweb:5.0.0 .' 
             }
         }
+
+        stage('Pushing the image in to the DockerRegistry')
+        {
+            steps
+            {
+              sh "docker login -u anjidockerid -p dockerid_#$"
+              sh "docker push rayinianji/myweb:5.0.0" 
+            }
+        }
         }
     
 }
