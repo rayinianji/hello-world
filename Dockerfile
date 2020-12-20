@@ -1,4 +1,4 @@
-FROM tomcat:8.0-alpine
+FROM tomcat:latest
 LABEL maintainer=”anjaneyulu195@gmail.com”
 COPY  webapp/target/webapp.war /usr/local/tomcat/webapps/
 EXPOSE 8080
