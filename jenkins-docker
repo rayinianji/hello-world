@@ -23,7 +23,7 @@ pipeline {
         {
             steps
             {
-              sh 'docker build -t rayinianji/myweb:5.0.0 .' 
+              sh 'docker build -t anjidockerid/firstmyweb:5.0.0 .' 
             }
         }
 
@@ -32,7 +32,7 @@ pipeline {
             steps
             {
               sh "docker login -u anjidockerid -p anjibabu2#"
-              sh "docker push rayinianji/myweb:5.0.0" 
+              sh "docker push anjidockerid/firstmyweb:5.0.0" 
             }
         }
         }
