@@ -41,7 +41,7 @@ pipeline {
             steps{
             sshagent(['Dev-box'])
              {
-                sh 'ssh -o StrictHostKeyChecking=no webapp/target/webapp.war ubuntu@15.206.189.200:'
+                sh 'scp -o StrictHostKeyChecking=no webapp/target/webapp.war ubuntu@15.206.189.200:'
             }
                 }
         }
