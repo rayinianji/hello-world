@@ -39,7 +39,7 @@ pipeline {
         stage('Deploying in Dev...')
         {
             steps{
-            sshagent (['deploy-dev'])
+            sshagent(['Dev-box'])
              {
                 sh 'ssh -o StrictHostKeyChecking=no webapp/target/webapp.war ubuntu@15.206.189.200:'
             }
