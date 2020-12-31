@@ -2,8 +2,8 @@ pipeline {
     agent any
     environment 
     {
-        VERION-ID ='2.0'
-        RELEASE-N0='3.1'
+        VERSION_ID='2.0'
+        RELEASE_NO='3.1'
     }
     tools
     {
@@ -21,7 +21,7 @@ pipeline {
             steps
             {
 
-                echo " We are building for version ${VERION-ID} and ${RELEASE-N0}"
+                echo " We are building for version ${VERSION_ID} and ${RELEASE_NO} "
                 sh " mvn clean package "
             }
         }
