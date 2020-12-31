@@ -1,5 +1,10 @@
 pipeline {
     agent any
+    environmment
+    {
+        VERION-ID='2.0'
+        RELEASE-N0='3.1'
+    }
     tools
     {
         maven 'maven-3'
