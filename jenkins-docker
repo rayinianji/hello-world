@@ -1,8 +1,8 @@
 pipeline {
     agent any
-    environmment
+    environment 
     {
-        VERION-ID='2.0'
+        VERION-ID ='2.0'
         RELEASE-N0='3.1'
     }
     tools
