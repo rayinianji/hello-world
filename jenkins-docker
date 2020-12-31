@@ -22,7 +22,7 @@ pipeline {
             {
 
                 echo " We are building for version ${VERION-ID} and ${RELEASE-N0}"
-                sh " mvn clean package ""
+                sh " mvn clean package "
             }
         }
         stage('Building the Docker Image')
